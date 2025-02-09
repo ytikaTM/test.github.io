@@ -1,0 +1,271 @@
+/* Подключение шрифтов */
+@font-face {
+    font-family: 'hl'; 
+    src: url('/fonts/hl.otf'); 
+}
+
+@font-face {
+    font-family: 'text'; 
+    src: url('/fonts/text.otf'); 
+}
+
+@keyframes gradientMove {
+    0% {
+        background-position: -200% 0;
+    }
+    100% {
+        background-position: 200% 0;
+    }
+}
+
+h1 {
+    color: transparent;
+    background: linear-gradient(90deg, #ffc6fa, #8400ff, #ffc6fa); /* Сиреневый и фиолетовый */
+    background-size: 200% 100%;
+    background-position: -200% 0;
+    -webkit-background-clip: text; /* Обеспечивает эффект только для текста */
+    animation: gradientMove 15s linear infinite; /* Анимация с движущимся градиентом */
+}
+
+h2{
+    color: transparent;
+    background: linear-gradient(90deg, #ffc6fa, #8400ff, #ffc6fa); /* Сиреневый и фиолетовый */
+    background-size: 200% 100%;
+    background-position: -200% 0;
+    -webkit-background-clip: text; /* Обеспечивает эффект только для текста */
+    animation: gradientMove 15s linear infinite; /* Анимация с движущимся градиентом */
+}
+
+
+/* Общие стили */
+body {
+    background-color: #f2f2f2;
+    font-family: 'text', Arial, sans-serif; /* Устанавливаем обычный текстовый шрифт */
+    transition: background-color 0.3s ease-in-out;
+}
+
+@font-face {
+    font-family: 'HLFont';
+    src: url('fonts/hl.otf') format('opentype'); /* Убедитесь, что путь к шрифту правильный */
+}
+
+h1, h2, h3, h4, h5, h6, a {
+    font-family: 'HLFont', sans-serif; /* Замените sans-serif на любой другой шрифт по умолчанию, если необходимо */
+}
+
+@font-face {
+    font-family: 'txt';
+    src: url('fonts/hl.otf') format('opentype'); /* Убедитесь, что путь к шрифту правильный */
+}
+
+p, n{
+    font-family: 'txt', sans-serif; /* Замените sans-serif на любой другой шрифт по умолчанию, если необходимо */
+}
+
+.button {
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 7px 7px;
+    font-size: 19px;
+    font-weight: 400;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    outline: none;
+    user-select: none;
+    color: #ffffff;
+    border-top-width: 0px;
+    border-right-width: 0px;
+    border-bottom-width: 0px;
+    border-left-width: 0px;
+    border-top-style: solid;
+    border-right-style: solid;
+    border-bottom-style: solid;
+    border-left-style: solid;
+    border-top-color: #000000;
+    border-right-color: #000000;
+    border-bottom-color: #000000;
+    border-left-color: #000000;
+    border-top-left-radius: 19px;
+    border-top-right-radius: 19px;
+    border-bottom-right-radius: 19px;
+    border-bottom-left-radius: 19px;
+    background-image: linear-gradient(45deg, #0062ff, #8b5cf6);
+    box-shadow: 7px 8px 2px 5px rgba(0,0,0,0.2);
+    animation: pulse 1.5s ease-in-out infinite;
+  }
+  
+  .button:hover {
+    transition: all 0.3s ease;
+    transform: translateY(2px);
+    box-shadow: none;
+  }
+  
+  @keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.05); }
+    100% { transform: scale(1); }
+  }
+  
+
+.container {
+    margin-top: 40px;
+}
+
+.feature-box {
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 20px;
+    background-color: #fff;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.feature-box:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.feature-box img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+h1 {
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.sub-heading {
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.dark-mode {
+    background-color: #1c1c1c;
+    color: #f2f2f2;
+}
+
+.dark-mode .feature-box,
+.dark-mode .dark-mode-btn {
+    background-color: #333;
+    color: #f2f2f2;
+}
+
+.dark-mode .feature-box:hover {
+    background-color: #444;
+}
+
+.dark-mode .dark-mode-btn:hover {
+    background-color: #111;
+}
+
+.dark-mode .trailer-video {
+    background-color: #000;
+}
+
+.dark-mode .faq-box {
+    border-color: #666;
+    background-color: #333;
+    color: #f2f2f2;
+}
+
+.dark-mode .faq-question {
+    color: #f2f2f2;
+}
+
+.dark-mode .faq-answer {
+    color: #f2f2f2;
+}
+
+.dark-mode .faq-question:hover,
+.dark-mode .faq-answer:hover {
+    color: #f2f2f2;
+}
+
+.dark-mode-btn {
+    display: inline-block;
+    padding: 8px 16px;
+    background-color: #f2f2f2;
+    color: #333;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.dark-mode-btn:hover {
+    background-color: #e6e6e6;
+}
+
+.trailer-video {
+    width: 100%;
+    height: 400px;
+    margin-bottom: 30px;
+}
+
+.image-gallery img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+.image-gallery .row {
+    margin-bottom: 20px;
+}
+
+.image-gallery .row:last-child {
+    margin-bottom: 0;
+}
+
+.youtube-btn {
+    display: inline-block;
+    padding: 8px 16px;
+    background-color: #f2f2f2;
+    color: #333;
+    border-radius: 5px;
+    margin-right: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.youtube-btn:hover {
+    background-color: #e6e6e6;
+}
+
+.top-right {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+footer.contact-footer {
+    margin-top: 40px;
+    padding: 20px;
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+}
+
+footer.contact-footer h2 {
+    margin-bottom: 10px;
+}
+
+footer.contact-footer p {
+    margin: 0;
+    font-size: 16px;
+}
+
+footer.contact-footer a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+footer.contact-footer a:hover {
+    text-decoration: underline;
+}
